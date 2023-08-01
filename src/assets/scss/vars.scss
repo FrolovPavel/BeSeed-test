@@ -1,0 +1,32 @@
+// COLOR
+$grayscaleWhite: #FFF;
+$grayscale100: #F8F8F8;
+$grayscale70: #656565;
+$grayscale400: #C3C3C3;
+$blue: #0085D2;
+$blueHover: #006EAE;
+$blueClick: #015B90;
+$lightBlue: #0085D20D;
+$lightBlueButton: #0085D233;
+$darkBlue: #2A405A;
+$green: #2AB42E;
+$greenLight: #d6f5d7;
+$greenHover: darken($greenLight, 10%);
+$greenClick: darken($greenLight, 15%);
+
+// RADIUS
+$radiusSM: 8px;
+$radiusMD: 16px;
+$radiusLG: 32px;
+
+// SHADOW
+$shadow: 0px 4px 16px 0px #0000001A;
+
+// MIXIN
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
